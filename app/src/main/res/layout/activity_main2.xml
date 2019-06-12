@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical">
+    <include
+        layout="@layout/custom_toolbar"
+        android:id="@+id/barid"/>
+
+<android.support.design.widget.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabid">
+
+</android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpagerid">
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal"
+    android:background="#F3E5F5"
+    android:paddingHorizontal="70dp"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:text="Logged in as "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/loginasid"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#90CAF9"
+        android:textStyle="bold"
+        android:id="@+id/logoutid"
+        android:background="#F3E5F5"/>
+</LinearLayout>
+</LinearLayout>
